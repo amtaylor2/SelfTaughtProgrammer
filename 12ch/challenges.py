@@ -6,10 +6,10 @@
 
 class Apple:
     def __init__(self,c,t,s,w):
-    self.color = c
-    self.type = t
-    self.size = s
-    self.weight = w
+        self.color = c
+        self.type = t
+        self.size = s
+        self.weight = w
 
 #Challenge 2
 #Create a circle class with a method
@@ -21,7 +21,7 @@ class Apple:
 
 class Circle:
     def __init__(self,r):
-    self.radius = r
+        self.radius = r
 
 def area(self):
     return self.radius * Math.pi
@@ -38,8 +38,8 @@ print(circle.area())
 
 class Triangle:
     def __init__(self,b,h):
-    self.base = b
-    self.height = h
+        self.base = b
+        self.height = h
 
 def area(self):
     return (self.base * self.height) / 2
@@ -57,7 +57,7 @@ print(triangle.area())
 
 class Hexagon:
     def __init__(self,s):
-    self.side = s
+        self.side = s
 
 def calculate_perimeter(self):
     return self.side * 6
