@@ -4,7 +4,7 @@
 #instance variables that represent four attributes
 #of an apple
 
-class Apple:
+class Apple():
     def __init__(self,c,t,s,w):
         self.color = c
         self.type = t
@@ -19,7 +19,7 @@ class Apple:
 #on it, and print the result. Use python's
 #pi function in the built-in Math Module
 
-class Circle:
+class Circle():
     def __init__(self,r):
         self.radius = r
 
@@ -36,7 +36,7 @@ print(circle.area())
 #Then create a triangle object, call area
 #on it, and print the result.
 
-class Triangle:
+class Triangle():
     def __init__(self,b,h):
         self.base = b
         self.height = h
@@ -55,7 +55,7 @@ print(triangle.area())
 #calculate_perimeter on it, and print the 
 #result
 
-class Hexagon:
+class Hexagon():
     def __init__(self,s):
         self.side = s
 
@@ -63,4 +63,4 @@ def calculate_perimeter(self):
     return self.side * 6
 
 hexagon = Hexagon(5)
-print(hexgon.calculate_perimeter)
+print(hexgon.calculate_perimeter())
