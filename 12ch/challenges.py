@@ -63,4 +63,4 @@ def calculate_perimeter(self):
     return self.side * 6
 
 hexagon = Hexagon(5)
-print(hexgon.calculate_perimeter())
+print(hexagon.calculate_perimeter())
