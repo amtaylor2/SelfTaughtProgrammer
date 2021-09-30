@@ -72,3 +72,22 @@ rectangle.what_am_i()
 
 square = Square(13,13)
 square.what_am_i()
+
+#Challenge 4
+#Create a class called Horse and a
+#class called Rider. Use composition
+#to model a horse that has a ride
+
+class Horse():
+    def __init__(self,breed,color,rider):
+        self.rider = rider
+        self.color = color
+        self.breed = breed
+
+class Rider():
+    def __init__(self, rider):
+        self.rider = rider
+
+andrew = Rider("Andrew")
+
+seabiscuit = Horse("Thorough Bred", "Black", andrew)
