@@ -23,10 +23,10 @@ echo Arizona 479, 501, 870. California 209, 213, 650. | grep [[:digits:]]
 #in the sentence
 #The ghost that says boo haunts the loo.
 
-#Part I in bash
+#Part I - in bash
 grep .*oo
 
-#Part II
+#Part II - in Python
 
 import re
 
