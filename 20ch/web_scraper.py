@@ -6,18 +6,15 @@ class Scraper:
         self.site = site
  
     def scrape(self):
-        r = urllib.request\
-            .urlopen(self.site)
-        xml = r.read()
-        parser = "html.parser"
-        sp = BeautifulSoup(xml,
-                           parser)
-        for item in sp.find_all("item"):
-            title = item.find("title")
-            if title is None:
-                continue
-            else:
-                print("\n" + title.text)
+        response = urllib.request.urlopen(self.site)
+        html = response.read()
+        soup = BeautifulSoup(html, 'html.parser')
+        with open("output.txt", "w") as f:
+            for tag in soup.find_all('a'):
+                url = tag.get('href')
+                if url and 'html' in url:
+                    print("\n" + url)
+                    f.write(url + "\n")
  
 news = "https://news.google.com/news/rss/headlines"
 Scraper(news).scrape()
